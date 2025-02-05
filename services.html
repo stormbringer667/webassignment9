@@ -72,6 +72,7 @@
             margin: 0;
             display: -webkit-box;
             -webkit-line-clamp: 6; /* Limit to 6 lines */
+            line-clamp: 6; /* Standard property for compatibility */
             -webkit-box-orient: vertical;
             overflow: hidden;
             height: 144px; /* Fixed height for text: 6 lines * 1.6 line-height * 0.95rem font-size */
@@ -84,6 +85,7 @@
             height: 2.8em; /* Fixed height for 2 lines of title */
             display: -webkit-box;
             -webkit-line-clamp: 2;
+            line-clamp: 2;
             -webkit-box-orient: vertical;
             overflow: hidden;
         }
@@ -148,7 +150,14 @@
         </div>
     </nav>
 
+<h2 id = "ser" class="salam">List of Services</h2>
 
+<style>
+    h2 {
+        text-align: center;
+        margin-top: auto;
+    }
+</style>
 <!-- Service Categories -->
 <section class="py-5">
     <div class="container">
@@ -430,5 +439,6 @@
     </footer>
     <script src="SScripts.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="Servscripts.js"></script>
 </body>
 </html>
